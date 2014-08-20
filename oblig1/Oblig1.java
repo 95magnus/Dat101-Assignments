@@ -13,7 +13,8 @@ public class Oblig1 {
 		 */
 
 		System.out.println("Dette er mitt første program.");
-		System.out.print("Dette er mitt \nførste program. \n");
+		System.out.println("Dette er mitt");
+		System.out.println("første program.");
 
 		JOptionPane.showMessageDialog(null, "Dette er mitt første program");
 		JOptionPane.showInputDialog("Hva heter du?");
