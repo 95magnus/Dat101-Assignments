@@ -3,7 +3,8 @@ import javax.swing.JOptionPane;
 public class Oblig2 {
 
 	private static String password;
-	private static int weeks, hours;
+	private static int weeks; 
+	private static float hours;
 
 	public static void oppg1() {
 		String correctPassword = "password";
@@ -35,7 +36,7 @@ public class Oblig2 {
 	}
 
 	public static void oppg3() {
-		hours = Integer.parseInt(JOptionPane.showInputDialog(null, "Hvor lenge bruker du på sosiale medier daglig?"));
+		hours = minToHour(Integer.parseInt(JOptionPane.showInputDialog(null, "Hvor lenge bruker du på sosiale medier daglig?")));
 
 		if (hours > 2) {
 			JOptionPane.showMessageDialog(null, "For mye");
@@ -45,9 +46,13 @@ public class Oblig2 {
 			JOptionPane.showMessageDialog(null, "Akkurat passe");
 		}
 	}
+	
+	public static float minToHour(float mins){
+		return mins / 60;
+	}
 
 	public static void main(String[] args) {
-		oppg1();
+     	oppg1();
 		oppg2();
 		oppg3();
 	}
