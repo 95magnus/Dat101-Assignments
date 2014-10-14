@@ -75,8 +75,8 @@ public class Oblig7 extends JFrame implements MouseMotionListener {
 			g.fillOval(p.x, p.y, BREDDE, HOYDE);
 		}
 
-		for (Point[] line : lines) {
-			drawLine(g, line[0], line[1]);
+		for (Point[] point : lines) {
+			drawLine(g, point[0], point[1]);
 		}
 	}
 
